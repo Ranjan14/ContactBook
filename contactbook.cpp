@@ -54,9 +54,7 @@ void display ()
 void search_contact()  //search contact
 {
      node *search_node = head, *next_node , *temp = head;
-    //*search_node pointer is used to find the contact
-    //*next_node pointer is used to free the deleted node storage
-
+  
     string search1;
     int count = 0;
     cout<<"Enter your desired contact to search ";
