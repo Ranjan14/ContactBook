@@ -92,11 +92,10 @@ void search_contact()  //search contact
     }
 }
 
-void Delete_contact() /// delete contact by name or phone number instead of index
+void Delete_contact() 
 {
     node *search_node = head, *next_node , *temp = head;
-    ///*search_node pointer is used to find the contact
-    ///*next_node pointer is used to free the deleted node storage
+    
 
     string search1;
     int count = 0;
@@ -113,7 +112,7 @@ void Delete_contact() /// delete contact by name or phone number instead of inde
         {
             if(search1 == search_node->name || search1 == search_node->number)/// to search contact
             {
-                if(count == 0) /// this will delete the first node
+                if(count == 0) 
               {
               temp = head;
               head = head->next;
@@ -122,10 +121,9 @@ void Delete_contact() /// delete contact by name or phone number instead of inde
             }
 
 
-            //in else part deletion at specific operation will perform
             else
             {
-                for (int i = 1 ; i<count ; i++)///count will be the deleted contact position
+                for (int i = 1 ; i<count ; i++)
                 {
                         temp= temp->next;
 
@@ -141,7 +139,7 @@ void Delete_contact() /// delete contact by name or phone number instead of inde
         break;
         }
 
-             ///it will help while loop to continue until last node become
+             
             search_node = search_node->next;
             count++;
 
